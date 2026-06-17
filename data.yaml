@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['-', 'pallet']
+
+roboflow:
+  workspace: sundharesan-kumaresan
+  project: pallet-detection-ith6b
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/sundharesan-kumaresan/pallet-detection-ith6b/dataset/6
