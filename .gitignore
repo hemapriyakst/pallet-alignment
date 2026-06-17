@@ -1,0 +1,14 @@
+# Dataset
+train/
+valid/
+test/
+
+# Model runs and weights
+runs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# YOLOv8 downloaded weights
+*.pt
