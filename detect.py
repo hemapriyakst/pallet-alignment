@@ -3,7 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 
 # ── Load model ──────────────────────────────────────────────
-model = YOLO("yolov8n.pt")  # general pretrained model for now
+model = YOLO("runs/detect/pallet_model/weights/best.pt")  # general pretrained model for now
 
 # ── Load a sample image from your dataset ───────────────────
 image_path = "test/images/"  # we'll point to a specific image next
