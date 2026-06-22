@@ -1,6 +1,6 @@
 # Pallet Detection & Alignment System
 
-A real-time computer vision system that detects industrial pallets and guides a robotic forklift to align correctly with the pallet fork openings — no hardware required.
+A real-time computer vision system that detects industrial pallets and guides a robotic forklift to align correctly with the pallet fork openings, no hardware required.
 
 ## Demo
 > Run `python align.py` and point your camera at a pallet.
@@ -36,9 +36,15 @@ Fine-tuned YOLOv8n on the [Pallet Detection Dataset](https://universe.roboflow.c
 ## Project Structure
 ```
 pallet-alignment/
-├── align.py          # Main live alignment script
-├── detect.py         # Single image detection script
-├── train.py          # Model fine-tuning script
-├── data.yaml         # Dataset config
-└── runs/             # Training outputs and weights
+├── runs/                  # Training outputs and best.pt weights
+├── test/                  # Test images from dataset
+├── train/                 # Training images from dataset
+├── valid/                 # Validation images from dataset
+├── align.py               # Main live alignment + dashboard script
+├── detect.py              # Single image detection script
+├── train.py               # Model fine-tuning script
+├── data.yaml              # Dataset config (classes, paths)
+├── README.dataset         # Dataset info from Roboflow
+├── README.roboflow        # Roboflow project metadata
+└── yolov8n.pt             # Base YOLOv8 pretrained weights
 ```
